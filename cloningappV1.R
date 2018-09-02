@@ -2,7 +2,7 @@ library(shiny)
 library(dplyr)
 library(stringr)
 library(DT)
-
+library(shinythemes)
 relist<- read.csv("re.csv",header=T)
 
 
@@ -63,14 +63,17 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
       br(),
       uiOutput("enzyme1Output"),
       uiOutput("enzyme2Output"),
+      
       #selectInput("enzyme1","Enzyme for forward primer",c("HindIII-HF","KpnI-HF")),
       #selectInput("enzyme2","Enzyme for reverse primer",c("HindIII-HF","KpnI-HF")),
       numericInput("forward",strong("No of basepairs in forward primer",style="color:green"),22 , min=18, max=100),
-      numericInput("reverse",strong("No of basepairs in reverse primer",style="color:green"),22, min=18,max=100)
-      
+      numericInput("reverse",strong("No of basepairs in reverse primer",style="color:green"),22, min=18,max=100),
+     
+      hr(),
+      a(h6("Click here for help",align= "left",style="color:blue"),href= "https://github.com/lrjoshi/cloningApp")
       ),
     
-
+    
    
       mainPanel(
        

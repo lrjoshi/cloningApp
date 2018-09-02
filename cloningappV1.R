@@ -95,7 +95,7 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
         hr(),
         h6("Powered by R Studio"),
         img(src="shiny.png",width=100,height=100,alt="Face"),
-        h6("Developed by: Lok Raj Joshi",style="color:blue")
+        h6("Developed by: Lok Raj",style="color:blue")
         )
       )
 )

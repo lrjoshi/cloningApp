@@ -55,8 +55,8 @@ reverse=function (d){
 
 
   
-ui <- fluidPage(
-  titlePanel("Shiny App for Designing Primers for Cloning"),
+ui <- fluidPage(theme = shinytheme("cyborg"),
+  titlePanel("Shiny App for Designing Primers for DNA Cloning"),
   sidebarLayout(
     sidebarPanel (
       textInput("inputDNA",strong("Paste your DNA sequence below",style="color:green"),value="AAGGCCTTGGACCGGTTAGGACGCTGAAGCTTGGCCGGAATTTGGATGGACCACAGGATTAGACCAGGGAGGATCCGGAAGGATGAGGACCAGGATTAGAAGCTTGGAA"),

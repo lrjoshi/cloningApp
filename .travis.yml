@@ -31,4 +31,4 @@ before_install:
   - "phantomjs --version"
 
 script:
-  - R -f cloningApp.R
+  - R -f cloningappV1.R

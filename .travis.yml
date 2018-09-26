@@ -1,9 +1,3 @@
-dist: trusty   # Use Ubuntu 14.04 image (instead of 12.04)
 language: r
-sudo: false
-r: 3.4.1
-
-
-
-script:
-  - R -f cloningappV1.R
+warnings_are_errors: true
+sudo: required
